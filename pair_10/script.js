@@ -76,3 +76,46 @@
 //     console.log(name, index);
 // })
 
+//-------------------DZ 1
+// let names = ["Марія", "Олександра", "Влад", "Іван", "Павло"];
+// names.push("Влада");
+// names.unshift("Всеволод");
+// names.pop();
+// names.splice(2, 1, "Єгор");
+// for(let i = 0; i < names.length; i++){
+//     console.log((i + 1) + ". " + names[i]);
+// }
+// for(let name of names){
+//     console.log(name);
+// }
+// names.forEach(function(name){
+//     console.log(name + name.length);
+// });
+
+//--------------------DZ 2
+let ticketCosts = [120, 250, 180, 300, 150, 400];
+let revenue = 0;
+
+for (let index = 0; index < ticketCosts.length; index++) {
+    revenue += ticketCosts[index];
+}
+console.log(revenue);
+let expensiveTickets = 0;
+for (let cost of ticketCosts) {
+    if (cost >= 200) {
+        expensiveTickets++;
+    }
+}
+console.log(expensiveTickets);
+let meanCost = revenue / ticketCosts.length;
+console.log(meanCost);
+let totalRevenue = 0;
+let qualifyingTickets = 0;
+ticketCosts.forEach(function (cost) {
+    totalRevenue += cost;
+    if (cost >= 200) {
+        qualifyingTickets++;
+    }
+});
+console.log(totalRevenue);
+console.log(qualifyingTickets);
