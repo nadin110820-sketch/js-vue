@@ -4,7 +4,6 @@
     padding: 0;
     list-style: none;
 }
-
 body{
     background:#eef2f7;
     color: #202938
@@ -14,7 +13,67 @@ body{
     margin: 60px auto;
     padding: 30px;
     background: #fff;
-    border-radius: 10px;
+    border-radius:*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    body{
+        background: #ffffff;
+        color: #5a3504;
+    }
+    .app{
+        max-width: 660px;
+        margin: 60px auto;
+        padding: 30px;
+        background: #d3e1d3;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-row{
+        display: flex;
+        gap: 10px;
+    }
+    input{
+        flex: 1;
+        min-width: 0;
+        padding: 10px 15px;
+        border: 1px solid #cdd2d3;
+        border-radius: 5px;
+    }
+    button{
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background: #112bac;
+        color: #fff;
+        cursor: pointer;
+    }
+    .task{
+        color: #5a3504;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #cdd2d3;
+    }
+    .task-text{
+        flex: 1;
+        overflow-wrap: anywhere;
+        color: #2c2929;
+    }
+    .task.done .task-text{
+        text-decoration: line-through;
+        color: #45a55a;
+    }
+    .edit-btn{
+        background: #5843e4;
+    }
+    .delete-btn{
+        background: #ae43e4;
+    } 10px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
