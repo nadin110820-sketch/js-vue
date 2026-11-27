@@ -1,5 +1,116 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #fb7474 0%, #000 100%);
+    color: white;
+}
+.card{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #656464;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px #100b2080;
+}
+h1{
+    margin: 12px 0 6px;
+    font-size: 30px;
+}
+.subtitle{
+    color: aquamarine;
+    margin: 0 0 25px;
+}
+.field{
+    margin-bottom: 25px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+input:not([type="checkbox"]){
+    width: 100%;
+    border: 1px solid #656464;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+input:focus-visible, button:focus-visible{
+    outline: 2px solid #fff;
+}
+.error{
+    display: block;
+    min-height: 15px;
+    margin-top: 5px;
+    color: red;
+    font-size: 12px;
+}
+.password-row{
+    position: relative;
+}
+.password-row input{
+    padding-right: 50px;
+}
+.toggle{
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    background: aliceblue;
+    cursor: pointer;
+}
+.strength-track{
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0 5px;
+}
+#strength-bar{
+    height: 100%;
+    width: 0;
+    transition: width .2s;
+}
+#strength-text{
+    color: white;
+    font-size: 12px;
+}
+.terns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.submit{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background: maroon;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit:hover{
+    background: mediumvioletred;
+}
+#result{
+    color: maroon;
+    font-size: 15px;
+    margin: 15px 0 0;
+}
+#result:empty{
+    display: none;
 }
